@@ -1,0 +1,40 @@
+
+
+main{
+    height: calc(100vh - 4rem) ;
+    width: 100vw;
+    background: var(--gray);
+}
+main p{
+    font-size: 1.3rem;
+    text-align: left;
+    font-weight: 200;
+}
+main h2{
+    color:var(--purple);
+    font-size:3rem;
+    padding-bottom: 1.5rem;
+}
+main .Container #image{
+   height: 60vh;
+}
+ 
+
+
+.Description{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: left;
+    justify-content:center;
+}
+
+.Container{
+    margin:  auto;
+    display: flex;
+    height:100%;
+    align-items: center;
+    justify-content:space-around;
+    width: 80%;
+
+}

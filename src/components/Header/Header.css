@@ -1,0 +1,30 @@
+header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    height:3rem;
+}
+
+.headerContainer{
+    justify-content: space-around;
+    display: flex;
+    width: 90%;
+    height:3rem;
+    margin: auto;
+    align-items: center;
+    
+}
+#logo {
+    width: 5rem;
+}
+ul{
+    padding: 0;
+    color: white;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+li{
+    margin:0 .5rem
+}

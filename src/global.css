@@ -1,0 +1,10 @@
+*{
+  --black: #000000;
+  --purple: #5800FF;
+  --white-bg: #e4f3ff;
+  --red: #85f763;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Josefin Sans', sans-serif;
+}
