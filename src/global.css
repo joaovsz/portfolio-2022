@@ -3,6 +3,7 @@
   --purple: #5800FF;
   --white-bg: #e4f3ff;
   --red: #85f763;
+  overflow-x: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
