@@ -1,4 +1,4 @@
-const Knowledges = [
+const data = [
     {name: 'HTML', img:},
     {name: 'CSS', img:},
     {name: 'JAVASCRIPT', img:},
@@ -9,3 +9,4 @@ const Knowledges = [
     {name: 'PHOTOSHOP', img:},
     {name: 'CORELDRAW', img:}
 ]
+
