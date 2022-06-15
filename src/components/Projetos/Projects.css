@@ -1,0 +1,15 @@
+#projects-container {
+  height: 100vh;
+  /* max-width:80vw; */
+  justify-content: space-between;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 0;
+}
+
+.projects-container p {
+  font-size: 0.7rem;
+  padding: 1rem 0;
+  height: 8rem;
+  color: rgba(0, 0, 0, 0.521);
+}
