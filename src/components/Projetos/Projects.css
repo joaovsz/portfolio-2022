@@ -1,15 +1,91 @@
-#projects-container {
-  height: 100vh;
-  /* max-width:80vw; */
-  justify-content: space-between;
-  flex-wrap: wrap;
-  display: flex;
-  margin: 0;
+#projects-container{
+  padding:0 1rem;
+  width: 100vw;
+  height: calc(100vh - 3rem);
+  background: rgb(111, 184, 16);
+  margin: 1rem auto;
+  display: block;
+  position: relative;
 }
 
-.projects-container p {
-  font-size: 0.7rem;
-  padding: 1rem 0;
-  height: 8rem;
-  color: rgba(0, 0, 0, 0.521);
+#projects-container .carousel-Arrow{
+  position: absolute;
+  top: 40%;
+  margin: auto;
+  width:calc(100% - 3rem);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  
+  
 }
+#projects-container .carousel-Arrow svg{
+  
+  color: white;
+}
+
+.project-content{
+  scroll-behavior: smooth;
+  margin: auto;
+  width: 88vw;
+  display: flex;
+  overflow-x:scroll;
+}
+
+.project-cards{
+  flex: none;
+  width:48%;
+  margin: auto;
+  height: 100%;
+  margin: 1rem ;
+}
+
+.project-cards:first-child{
+  margin-left: 0;
+}
+
+.Paper-card {
+  display: flex;
+  flex-direction:column;
+  background: var(--white-bg);
+  height: 65vh;
+}
+
+.Paper-card .card-Media {
+  overflow-y: hidden;
+  height:40vh;
+  object-fit: cover;
+}
+.Paper-card .card-Media img{
+  height: 100%;
+}
+
+.Paper button{
+  display: flex;
+  flex-direction: column;
+  height:100%;
+  justify-content: flex-start;
+}
+
+
+
+#projects-container h2{
+  color:white;
+  margin: 1rem;
+  text-align:center;
+}
+
+.Paper-card p {
+  padding:1rem ;
+}
+.Paper-card h4 {
+  padding:1rem ;
+}
+
+.projects-container p{
+    font-size:.7rem;
+    height:8rem;
+    color:rgba(0, 0, 0, 0.521);
+}
+

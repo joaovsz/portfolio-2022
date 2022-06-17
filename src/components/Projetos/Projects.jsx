@@ -3,25 +3,61 @@ import "./Projects.css";
 import Card from "@mui/material/Card";
 import { cards } from "../db/database";
 import CardContent from "@mui/material/CardContent";
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import CardMedia from "@mui/material/CardMedia";
-import { CardActionArea } from "@mui/material";
+import { CardActionArea, IconButton } from "@mui/material";
+import { useRef } from 'react';
+
 
 const Projects = () => {
+  const carousel = useRef(null)
+
+  function handleLeftClick(e){
+    e.preventDefault();
+    console.log(carousel.current.offsetWidth);
+    carousel.current.scrollLeft -= carousel.current.offsetWidth;
+
+  }
+  function handleRightClick(e){
+    e.preventDefault();
+    console.log(carousel.current.offsetWidth);
+    carousel.current.scrollLeft += carousel.current.offsetWidth;
+  }
+
   return (
-    <div id="projects-container">
-      {cards.map((cards) => (
-        <Card sx={{ maxWidth: 300 }}>
-          <CardActionArea>
-            <CardMedia component="img" height="130" image={cards.img} />
-            <CardContent>
-              <h4>{cards.title}</h4>
-              <p>{cards.description}</p>
-            </CardContent>
-          </CardActionArea>
-        </Card>
-      ))}
+    <section id="projects-container">
+      <h2>Projetos desenvolvidos</h2>
+    <div className="carousel-Arrow"> 
+    <IconButton onClick={handleLeftClick}>
+      <ArrowBackIosIcon/>
+    </IconButton>
+    <IconButton onClick={handleRightClick}>
+      <ArrowForwardIosIcon/>
+    </IconButton>
+   
     </div>
-  );
+      <div className="project-content" ref={carousel}>
+
+        {cards.map((cards) => (
+          <div className="project-cards" key={cards.title}>
+            <div className="Paper-card">
+              <div className="card-Media">
+                <img  src={cards.img} />
+              </div>
+                <div className="card-content">
+                  <h4>{cards.title}</h4>
+                  <p>{cards.description}</p>
+                </div>
+              
+            </div>
+        </div>
+        ))}
+        </div>
+        
+        </section>
+     )
+  
 };
 
 export default Projects;

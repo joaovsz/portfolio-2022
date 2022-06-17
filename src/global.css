@@ -2,10 +2,25 @@
   --black: #000000;
   --purple: #5800FF;
   --white-bg: #e4f3ff;
-  --red: #85f763;
+  --green: #85f763;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
+
+section{
+  scroll-snap-align: start;
+  height:100vh;
+}
+
+main{
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  
+  overflow-y: scroll;
+  height:calc(100vh - 4rem);
+  
+}
+

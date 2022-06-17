@@ -1,7 +1,7 @@
 import React from 'react';
 import './global.css'
 import Header from './components/Header/Header'
-import Apresentation from './components/Main/Apresentation';
+import MainContainer from './components/Main/MainContainer';
 import Knowledges from './components/Conhecimentos/Knowledges';
 import Projects from './components/Projetos/Projects';
 function App() {
@@ -9,9 +9,11 @@ function App() {
   return (
     <> 
     <Header/>
-    <Apresentation/>
+    <main>
+    <MainContainer/>
     <Projects/>
     <Knowledges/>
+    </main>
     </>
   )
     

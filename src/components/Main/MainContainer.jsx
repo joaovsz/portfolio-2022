@@ -1,8 +1,8 @@
 import React from 'react'
 import "./Apresentation.css"
-const Apresentation = () => {
+const MainContainer = () => {
   return (
-    <main>
+    <section id="Apresentation">
         <div className="Container">
             <div className="Description">
               <h2>Seja bem vindo!</h2>
@@ -17,8 +17,8 @@ const Apresentation = () => {
                 
             </div>
         </div>
-    </main>
+    </section>
   )
 }
 
-export default Apresentation
+export default MainContainer
