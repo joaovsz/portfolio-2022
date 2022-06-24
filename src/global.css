@@ -1,13 +1,13 @@
 *{
-  --black: #000000;
-  --purple: #5800FF;
-  --white-bg: #e4f3ff;
-  --green: #85f763;
-  overflow-x: hidden;
+  --bg-black: #414141;
+  --purple: #6a50ff;
+  --white-bg: #e6e6e6;
+  --green-light: #82fa82;
+  /* overflow-x: hidden; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 section{
@@ -18,9 +18,22 @@ section{
 main{
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
-  
   overflow-y: scroll;
-  height:calc(100vh - 4rem);
+  height:calc(100vh - 3rem);
   
 }
 
+
+
+*::-webkit-scrollbar {
+  width: 4px;
+  height:3px;
+}
+*::-webkit-scrollbar-track {
+  background: #15171b6b;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: #82838370;
+  border-radius:4rem;
+  border: 0px dashed #9e8c8c0c;
+}

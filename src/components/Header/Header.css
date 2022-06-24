@@ -1,25 +1,24 @@
 header{
-    width: 100%;
+    width: 100vw;
     display: flex;
     align-items: center;
-    background: var(--black);
+    background: rgb(7, 0, 0);
     height:3rem;
 }
 
 .headerContainer{
-    justify-content: space-around;
+    justify-content: space-between;
     display: flex;
-    width: 90%;
-    height:3rem;
+    width: 90vw;
+    height:100%;
     margin: auto;
     align-items: center;
-    
+  
 }
 #logo {
     width: 5rem;
 }
 ul{
-    padding: 0;
     color: white;
     list-style-type: none;
     display: flex;
@@ -27,4 +26,12 @@ ul{
 }
 li{
     margin:0 .5rem
+}
+
+li:first-child{
+    margin: 0;
+}
+
+li:last-child{
+    margin: 0;
 }

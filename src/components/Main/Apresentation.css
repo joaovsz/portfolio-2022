@@ -1,40 +1,79 @@
 
-
 #Apresentation{
-    height: calc(100vh - 4rem) ;
+    height: calc(100vh - 3rem) ;
     width: 100vw;
-    background: var(--gray);
-}
-#Apresentation p{
-    font-size: 1.3rem;
-    text-align: left;
-    font-weight: 200;
-}
-#Apresentation h2{
-    color:var(--purple);
-    font-size:3rem;
-    padding-bottom: 1.5rem;
-}
-#Apresentation .Container #image{
-   height: 60vh;
-}
- 
-
-
-.Description{
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    align-items: left;
-    justify-content:center;
+    background-size: cover;
+    background: var(--bg-black); 
+    
 }
 
 .Container{
-    margin:  auto;
-    display: flex;
-    height:100%;
+    margin: auto;
+    height: calc(100vh - 3rem) ;
+    width:90vw;
+    position: relative;
+    display:flex;
+    justify-content:space-between;
     align-items: center;
-    justify-content:space-around;
-    width: 80%;
+    
+}
 
+.Container .description-card{
+    background:var(--white-bg);
+    height:20rem;
+    width:50rem;
+    position: relative;
+    left:-11vh;
+    border-top-right-radius: 80px;
+    border-bottom-right-radius: 80px;
+    border-bottom:.5rem solid var(--purple);
+    border-right:.5rem solid var(--purple);
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    animation: reveal 1s ease-in-out;
+}
+
+.Container .description-card .text-description{
+    width:80%;
+    margin: auto;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.Container .description-card .text-description h1{
+    margin:0 0 1rem 0;
+}
+
+.Container .img-pc{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    animation: moving-infinite 3s ease-in infinite;
+    animation-direction: alternate;
+    position: relative;
+} 
+
+.Container .img-pc img{
+    height: 80%;
+}
+
+
+
+@keyframes moving-infinite{
+    0%{
+        transform:translateY(0px);
+    }
+    100%{
+        transform:translateY(10px);
+    }
+}
+
+@keyframes reveal {
+    0%{
+        left: -100vh
+    }
+    100%{
+        left: -11vh
+    }
 }
