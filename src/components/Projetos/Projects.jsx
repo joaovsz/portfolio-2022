@@ -1,15 +1,12 @@
 import React from "react";
 import "./Projects.css";
-import Card from "@mui/material/Card";
 import { cards } from "../db/database";
-import CardContent from "@mui/material/CardContent";
-import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
-import CardMedia from "@mui/material/CardMedia";
-import { Button, CardActionArea, IconButton } from "@mui/material";
+import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
+import { Button, IconButton } from "@mui/material";
 import { useRef } from 'react';
-
+import Fade from 'react-reveal/Fade';
 
 const Projects = () => {
   const carousel = useRef(null)
@@ -28,16 +25,24 @@ const Projects = () => {
 
   return (
     <section id="projects-container">
+      <Fade top>
+      <div className="title-projects">
       <h2>Projetos desenvolvidos</h2>
+      </div>
+      </Fade>
+      {/* <div className="hr"></div> */}
+      <Fade>
+
+    
       <div className="carousel-content">
-    <div className="carousel-Arrow"> 
-    <IconButton onClick={handleLeftClick}>
-      <ArrowBackIosIcon/>
-    </IconButton>
-    <IconButton onClick={handleRightClick}>
-      <ArrowForwardIosIcon/>
-    </IconButton>
-    </div>
+        <div className="carousel-Arrow"> 
+        <IconButton onClick={handleLeftClick}>
+          <ArrowBackIosIcon/>
+        </IconButton>
+        <IconButton onClick={handleRightClick}>
+          <ArrowForwardIosIcon/>
+        </IconButton>
+        </div>
       <div className="project-content" ref={carousel}>
         {cards.map((card) => (
           <div className="card">
@@ -52,7 +57,7 @@ const Projects = () => {
         
         </div>
         </div>
-        
+        </Fade>
         </section>
      )
   

@@ -2,8 +2,9 @@ header{
     width: 100vw;
     display: flex;
     align-items: center;
-    background: rgb(7, 0, 0);
+    background: var(--bg-black);
     height:3rem;
+    
 }
 
 .headerContainer{
@@ -19,11 +20,15 @@ header{
     width: 5rem;
 }
 ul{
-    color: white;
     list-style-type: none;
     display: flex;
     align-items: center;
 }
+ul .link{
+    color: white;
+    text-decoration:none;
+}
+
 li{
     margin:0 .5rem
 }
@@ -34,4 +39,18 @@ li:first-child{
 
 li:last-child{
     margin: 0;
+}
+
+
+#contact{
+    border:1px solid var(--white-bg);
+    font-weight:700;
+    border-radius:.6rem;
+    border: 0;
+    background:var(--green-light);
+    padding:.5rem;
+}
+
+#contact:hover{
+    background:#88FC88;
 }

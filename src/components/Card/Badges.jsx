@@ -1,7 +1,11 @@
 import React from "react";
 import "./Badges.css";
-const Badges = ({ image }) => {
-  return <img id="badges" src={image}></img>;
+const Badges = ({ image, className }) => {
+  return (
+  <div className={className}>
+    <img className="badges" src={image}></img>
+    </div>
+  );
 };
 
 export default Badges;

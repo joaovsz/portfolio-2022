@@ -6,11 +6,17 @@ const Header = () => {
         <div className="headerContainer">
             <img src="../images/minimalLogoWhite.svg" id="logo"></img>
             <ul>
-                <li>Projetos</li>
-                <li>Conhecimentos</li>
-                <li>Quem Sou</li>
+             <li> <a className="link" href="#projects-container">
+                Projetos
+              </a></li>
+             <li> <a className="link" href="#Apresentation">
+                Conhecimentos
+              </a></li>
+               <li><a className="link" href="#">
+               Quem Sou
+              </a></li>
             </ul>
-            <button>Contato</button>
+            <button id="contact">Contato</button>
         </div>
     </header>
   )

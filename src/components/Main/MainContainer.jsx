@@ -1,5 +1,7 @@
 import React from "react";
 import "./Apresentation.css";
+import Fade from 'react-reveal/Fade';
+
 const MainContainer = () => {
   return (
     <section id="Apresentation">
@@ -16,7 +18,9 @@ const MainContainer = () => {
         </div>
         
         <div className="img-pc">
+          <Fade right>
           <img src="./images/bg-apresentation_Images/PortfolioPC.svg"></img>
+          </Fade>
         </div>
       </div>
     </section>

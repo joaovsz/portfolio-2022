@@ -6,12 +6,18 @@
   flex-direction: column;
   justify-content:center;
   position: relative;
-  background: var(--purple);
+  background-color:var(--purple);
+  background-image:
+  radial-gradient(at 14% 86%, hsla(120,92%,74%,1) 0px, transparent 50%),
+  radial-gradient(at 52% 96%, hsla(120,92%,74%,1) 0px, transparent 50%),
+  radial-gradient(at 85% 87%, hsla(120,92%,74%,1) 0px, transparent 50%);
+  gap:12px;
+  overflow-x: hidden;
 
 }
 .carousel-content{
+  
   position: relative;
-
 }
 #projects-container .carousel-Arrow{
   position: relative;
@@ -32,7 +38,6 @@
   scroll-behavior: smooth;
   margin:auto;
   width: 60vw;
-  height:85%;
   display: flex;
   position: relative;
   overflow-x:scroll;
@@ -60,7 +65,15 @@
   margin-right: 0;
 }
 
-
+.hr{
+  height:12vh;
+  width:0.1rem;
+  margin:0 auto;
+  background: var(--green-light);
+  background: linear-gradient(180deg, var(--green-light) 0%, rgba(7,3,33,0) 100%);
+  position:relative;
+  top:1rem;
+}
 
 .card .description{
   font-size: 1.5rem;
@@ -123,13 +136,17 @@
   color: white;
 }
 
-#projects-container h2{
+#projects-container .title-projects{
   padding:1rem 0;
+  
   color:black;
   background-color: var(--green-light);
   text-align:center;
 }
 
+#projects-container h2{
+
+}
 
   .project-content::-webkit-scrollbar {
     width: 4px;
