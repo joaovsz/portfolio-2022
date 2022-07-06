@@ -7,7 +7,7 @@ const Knowledges = () => {
    return (
     <>
       <hr></hr>
-      <section className="Conhecimentos">
+      <section className="Conhecimentos" id="Conhecimentos">
         <h2>Conhecimentos</h2>
         <div className="card-container">
           {dataCards.map((data) => (

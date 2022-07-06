@@ -9,10 +9,10 @@ const Header = () => {
              <li> <a className="link" href="#projects-container">
                 Projetos
               </a></li>
-             <li> <a className="link" href="#Apresentation">
+             <li> <a className="link" href="#Conhecimentos">
                 Conhecimentos
               </a></li>
-               <li><a className="link" href="#">
+               <li><a className="link" href="#Apresentation">
                Quem Sou
               </a></li>
             </ul>
