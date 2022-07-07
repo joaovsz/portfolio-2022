@@ -6,7 +6,6 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import { Button, IconButton } from "@mui/material";
 import { useRef } from 'react';
-import Fade from 'react-reveal/Fade';
 
 const Projects = () => {
   const carousel = useRef(null)
@@ -25,14 +24,10 @@ const Projects = () => {
 
   return (
     <section id="projects-container">
-      <Fade top>
+     
       <div className="title-projects">
       <h2>Projetos desenvolvidos</h2>
       </div>
-      </Fade>
-      {/* <div className="hr"></div> */}
-      <Fade>
-
     
       <div className="carousel-content">
         <div className="carousel-Arrow"> 
@@ -57,7 +52,7 @@ const Projects = () => {
         
         </div>
         </div>
-        </Fade>
+        
         </section>
      )
   
