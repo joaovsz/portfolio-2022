@@ -2,7 +2,7 @@ header{
     width: 100vw;
     display: flex;
     align-items: center;
-    background: var(--bg-black);
+    background: var(--purple);
     height:3rem;
     
 }
@@ -19,7 +19,7 @@ header{
 #logo {
     width: 5rem;
 }
-ul{
+.ulHeader{
     list-style-type: none;
     display: flex;
     align-items: center;

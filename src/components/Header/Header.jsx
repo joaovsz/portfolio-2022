@@ -5,7 +5,7 @@ const Header = () => {
     <header>
         <div className="headerContainer">
             <img src="../images/minimalLogoWhite.svg" id="logo"></img>
-            <ul>
+            <ul className="ulHeader">
              <li> <a className="link" href="#projects-container">
                 Projetos
               </a></li>

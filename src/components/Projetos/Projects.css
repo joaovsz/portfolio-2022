@@ -7,16 +7,15 @@
   justify-content:center;
   position: relative;
   background-color:var(--purple);
-  background-image:
+  /* background-image:
   radial-gradient(at 14% 86%, hsla(120,92%,74%,1) 0px, transparent 50%),
   radial-gradient(at 52% 96%, hsla(120,92%,74%,1) 0px, transparent 50%),
   radial-gradient(at 85% 87%, hsla(120,92%,74%,1) 0px, transparent 50%);
-  gap:12px;
+   */gap:12px;
   overflow-x: hidden;
 
 }
-.carousel-content{
-  
+.carousel-content{ 
   position: relative;
 }
 #projects-container .carousel-Arrow{

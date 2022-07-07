@@ -1,6 +1,7 @@
 .card-container{
     width:30rem;
-    margin: auto;
+    height:70vh;
+    margin: auto 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -9,9 +10,59 @@
     
 }
 .Conhecimentos{
+    margin:auto;
+    display:flex;
+    gap:4rem;
+    justify-content:center;
     color:white;
+    width:100vw;
+    height:calc(100vh - 3rem);
     background-color:var(--bg-black);
 }
+
+.Conhecimentos .descricao{
+    background-color:var(--bg-black);
+    margin:auto 0;
+    width:52vw;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+    height:70vh;
+}
+
+.Conhecimentos .descricao .resume{
+    margin:.2rem 0 0 1rem;
+    text-indent: 24px;
+    line-height:1.2rem;
+    text-align:justify;
+   
+}
+.Conhecimentos .descricao .levels{
+    text-align:left;
+    padding-top: 1rem;
+    height:100%;
+}
+
+
+.Conhecimentos .descricao .levels #time-level{
+    margin:1rem 0 0 1rem;
+    height:4rem;
+    flex-wrap: wrap;
+    width:100%;
+    display: flex;
+}
+
+.Conhecimentos .descricao .levels #time-level li{
+    margin:.3rem;
+    color:var(--bg-black);
+    font-weight:bold;
+    border-radius:.3rem;
+    background-color:var(--green-light);
+    list-style-type:none;
+    padding:.5rem;
+}
+
+
 .Conhecimentos img{
     width:100%;
     height:10rem;
@@ -26,16 +77,12 @@
 .PHOTOSHOP { grid-area: 3 / 2 / 4 / 3; }
 .CORELDRAW { grid-area: 3 / 3 / 4 / 4; }
 
-.Conhecimentos h2{
-    width:80vw;
-    margin: auto;
-    padding: 1rem 0;
-    text-align: center;
+.Conhecimentos .descricao h2{
+    margin:1rem 0 1rem 1rem;
 }
 
-hr{
-    height: 1px;
-    margin: auto;
-    width: 80vw;
-    background-color: rgba(0, 0, 0, 0.007);
+.Conhecimentos .descricao h4{
+    padding-top:1rem;
+    border-top:3px solid #4d4d4d;
+    margin: 1rem 0 0 1rem;
 }
