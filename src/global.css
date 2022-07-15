@@ -97,7 +97,6 @@ main{
   html{
     font-size:.7rem;
   }
-  
   #Apresentation .Container{
     flex-direction:column;
     justify-content:center;
@@ -112,7 +111,28 @@ main{
   #Apresentation .Container .img-pc{  
     height:40%;
   }
-  
+  #projects-container {
+    justify-content: flex-start;
+    height:100%;
+    position:relative;
+  }
+  #projects-container .carousel-content {
+    width:100%;
+    overflow-y:scroll;
+  }
+
+  #projects-container .carousel-content .project-content{
+    flex-direction:column;
+    width:80vw;
+    height:50vh;
+  }
+
+  #projects-container .carousel-content .project-content .card{
+    
+    width:100%;
+  }
+  #projects-container .carousel-content .project-content .card p{
+  font-size:1rem;
 }
 
 @keyframes revealMobile {
