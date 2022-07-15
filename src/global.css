@@ -89,12 +89,16 @@ main{
   }
   .Conhecimentos .card-container img{
     height:95%;
-  
+}
+.carousel-content div.carousel-Arrow svg{
+  display:none;
 }
 }
 
 @media(max-width:500px) {
   html{
+    overflow-x:hidden;
+
     font-size:.7rem;
   }
   #Apresentation .Container{
@@ -111,28 +115,35 @@ main{
   #Apresentation .Container .img-pc{  
     height:40%;
   }
-  #projects-container {
-    justify-content: flex-start;
-    height:100%;
-    position:relative;
+  section#projects-container {
+    justify-content: center;
   }
   #projects-container .carousel-content {
     width:100%;
     overflow-y:scroll;
+   
   }
 
   #projects-container .carousel-content .project-content{
     flex-direction:column;
     width:80vw;
-    height:50vh;
+    height:57vh;
+   padding:.5rem;
+
   }
 
   #projects-container .carousel-content .project-content .card{
-    
     width:100%;
   }
+  
   #projects-container .carousel-content .project-content .card p{
   font-size:1rem;
+}
+#projects-container .carousel-content .project-content .card .title{
+  font-size:1rem;
+}
+
+
 }
 
 @keyframes revealMobile {

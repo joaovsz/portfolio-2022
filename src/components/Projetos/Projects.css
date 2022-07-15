@@ -121,7 +121,7 @@
 
 .card a{
   text-decoration:none;
-  min-width:16%;
+  min-width:10%;
 }
 .card a:hover{
   border-radius: 3px;
@@ -131,7 +131,7 @@
 }
 
 .card .description button{
-  width:100%;
+  width:90%;
   border: 1px solid white;
 }
 
@@ -141,7 +141,6 @@
 
 #projects-container .title-projects{
   padding:1rem 0;
-  
   color:black;
   background-color: var(--green-light);
   text-align:center;
