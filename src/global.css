@@ -97,8 +97,10 @@ main{
   html{
     font-size:.7rem;
   }
+  
   #Apresentation .Container{
     flex-direction:column;
+    justify-content:flex-start;
   }
   #Apresentation .Container .description-card{
     left:0;
@@ -106,4 +108,8 @@ main{
     width:90vw;
     border-radius:0px;
   }
+  #Apresentation .Container .img-pc{  
+    height:55%;
+  }
+  
 }
