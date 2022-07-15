@@ -100,16 +100,26 @@ main{
   
   #Apresentation .Container{
     flex-direction:column;
-    justify-content:flex-start;
+    justify-content:center;
   }
   #Apresentation .Container .description-card{
     left:0;
     top:1rem;
     width:90vw;
-    border-radius:0px;
+    border-radius:1rem;
+    animation: revealMobile 2s linear;
   }
   #Apresentation .Container .img-pc{  
-    height:55%;
+    height:40%;
   }
   
+}
+
+@keyframes revealMobile {
+  0%{
+      top: -100vh
+  }
+  100%{
+      top: 1rem
+  }
 }
