@@ -1,12 +1,12 @@
-*{
+*, body{
   --bg-black: #414141;
   --purple: #6a50ff;
   --white-bg: #e6e6e6;
   --green-light: #82fa82;
-  /* overflow-x: hidden; */
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size:1rem;
   font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -24,9 +24,6 @@ main{
   
 }
 
-
-
-
 *::-webkit-scrollbar {
   width: 4px;
   height:3px;
@@ -38,4 +35,75 @@ main{
   background-color: #82838370;
   border-radius:4rem;
   border: 0px dashed #9e8c8c0c;
+}
+
+@media(max-width:1024px) {
+  html{
+    font-size:.8rem;
+  }
+  #Apresentation .Container img{
+    height:65%;
+  }
+  #projects-container .title-projects h2{
+    font-size:1.5rem;
+  }
+
+  .project-content .card .description .title{
+    font-size:1.5rem;
+  }
+  .project-content .card .description p{
+    font-size:1.5rem;
+  }
+}
+
+@media(max-width:768px){
+  html{
+    font-size:.75rem;
+  }
+ 
+  #Apresentation .Container .img-pc {
+    height:60%;
+  }
+  #Conhecimentos {
+    flex-direction:column-reverse;
+    align-items: center;
+    justify-content:flex-end;
+    gap:2rem;
+  }
+  #Conhecimentos .descricao{
+    width:90vw;
+    margin:0;
+  }
+  
+  #Conhecimentos .card-container{
+    display:flex;
+    scroll-behavior: smooth;
+    width:90vw;
+    overflow-x:scroll;
+    margin:3rem auto 0 auto;
+    flex-direction:row;
+    position: relative;
+    gap:1rem;
+    height:10rem;
+    padding-bottom:.5rem;
+  }
+  .Conhecimentos .card-container img{
+    height:95%;
+  
+}
+}
+
+@media(max-width:500px) {
+  html{
+    font-size:.7rem;
+  }
+  #Apresentation .Container{
+    flex-direction:column;
+  }
+  #Apresentation .Container .description-card{
+    left:0;
+    top:1rem;
+    width:90vw;
+    border-radius:0px;
+  }
 }
