@@ -9,7 +9,6 @@
   background-color:var(--purple);
   gap:12px;
   overflow-x: hidden;
-
 }
 .carousel-content{ 
   position: relative;

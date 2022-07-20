@@ -120,24 +120,41 @@ main{
   }
   #projects-container .carousel-content {
     width:100%;
-    overflow-y:scroll;
+    overflow-y: hidden;
    
+  }
+ .card-container div .badges{
+    height:100%;
+    width:auto;
   }
 
   #projects-container .carousel-content .project-content{
     flex-direction:column;
     width:80vw;
-    height:57vh;
+    height:85vh;
    padding:.5rem;
-
+    overflow-x:hidden;
   }
 
   #projects-container .carousel-content .project-content .card{
     width:100%;
+  }  
+  #projects-container .carousel-content .project-content .card a{
+    width:6rem;
+    height:2rem;
+  }
+  #projects-container .carousel-content .project-content .card a button{
+    width:100%;
+    font-size:.8rem;
+    height:2rem;
+  }
+  #projects-container .carousel-content .project-content .card a button span{
+    display:none;
   }
   
   #projects-container .carousel-content .project-content .card p{
-  font-size:1rem;
+  font-size:.9rem;
+  width:90%;
 }
 #projects-container .carousel-content .project-content .card .title{
   font-size:1rem;
