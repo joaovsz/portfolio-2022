@@ -45,7 +45,7 @@ export const cards = [
   {
     title: "DevFinances",
     description:
-      "O To-Do é uma aplicação desenvolvida com React que demonstra a utilização de uma lista afazeres com 3 funcionalidades, sendo elas adicionar a tarefa, marcar como feita e apagar a tarefa. Este app tem como principal demonstração de código a utilização de componentes gerados a partir do texto digitado pelo usuário, utilizando o gerenciador de estado Redux.",
+      "O devFinances tem o objetivo de fazer cálculos monetários de uma forma intuitiva para ajudar o usuário a ter um controle de entradas e saídas em um período de tempo em que ele define. Desenvolvido com React + Typescript e o gerenciador de estado Redux",
     img: "/images/cardImages/devfinances.png",
     link:"https://joaovsz.github.io/Project-Finance/"
   },
