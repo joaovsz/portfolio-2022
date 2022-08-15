@@ -47,6 +47,6 @@ export const cards = [
     description:
       "O devFinances tem o objetivo de fazer cálculos monetários de uma forma intuitiva para ajudar o usuário a ter um controle de entradas e saídas em um período de tempo em que ele define. Desenvolvido com React + Typescript e o gerenciador de estado Redux",
     img: "/images/cardImages/devfinances.png",
-    link:"https://joaovsz.github.io/Project-Finance/"
+    link:"https://devfinances-jvsz.netlify.app/"
   },
 ];
