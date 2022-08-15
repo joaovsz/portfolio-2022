@@ -2,9 +2,8 @@
 #Apresentation{
     height: calc(100vh - 3rem) ;
     width: 100vw;
+    background: url(./images/background.jpg); 
     background-size: cover;
-    background: var(--bg-black); 
-    
 }
 
 .Container{
