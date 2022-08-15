@@ -2,7 +2,7 @@
 #Apresentation{
     height: calc(100vh - 3rem) ;
     width: 100vw;
-    background: url(./public/images/background.jpg); 
+    background: url(../background.jpg); 
     background-size: cover;
 }
 
