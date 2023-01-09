@@ -12,13 +12,11 @@ const Projects = () => {
 
   function handleLeftClick(e){
     e.preventDefault();
-    console.log(carousel.current.offsetWidth);
     carousel.current.scrollLeft -= carousel.current.offsetWidth;
 
   }
   function handleRightClick(e){
     e.preventDefault();
-    console.log(carousel.current.offsetWidth);
     carousel.current.scrollLeft += carousel.current.offsetWidth;
   }
 
