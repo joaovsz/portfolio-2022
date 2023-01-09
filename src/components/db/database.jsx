@@ -19,6 +19,13 @@ export const cards = [
     link:"https://callregister.netlify.app/"
   },
   {
+    title: "Simulador de Renda",
+    description:
+      "O Simulador de renda é uma plataforma para facilitar o cálculo da quantia de comissão ganha dos agentes da equipe de Retenção do serviço de Oi Tv, com base nos indicadores de resultado de cada colaborador. Projeto independente para a empresa especializada em atendimento Tahto - Site Goiânia.",
+    img: "/images/cardImages/simuladorRV.png",
+    link:"https://simuladorrv.netlify.app/"
+  },
+  {
     title: "Carrinho de compras com React",
     description:
       "O Cart-App é uma aplicação desenvolvida com React com intuito de fazer uma pequena demonstração de como seria a interação de um usuário dentro de um site de compras ao adicionar os produtos escolhidos em um carrinho.",
