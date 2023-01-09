@@ -12,6 +12,13 @@ export const dataCards = [
 
 export const cards = [
   {
+    title: "Controle de Ligações",
+    description:
+      "O callRegister é uma ferramenta de trabalho para auxiliar no controle diário de ligações recebidas pelos agentes de atendimento da equipe de Retenção do serviço de Oi Tv prestado pela empresa especializada em atendimento Tahto - Site Goiânia.",
+    img: "/images/cardImages/callRegister.png",
+    link:"https://callregister.netlify.app/"
+  },
+  {
     title: "Carrinho de compras com React",
     description:
       "O Cart-App é uma aplicação desenvolvida com React com intuito de fazer uma pequena demonstração de como seria a interação de um usuário dentro de um site de compras ao adicionar os produtos escolhidos em um carrinho.",
