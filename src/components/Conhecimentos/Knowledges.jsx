@@ -30,8 +30,8 @@ const Knowledges = () => {
             <h4> &nbsp;&bull; Tempo de estudo</h4>
             <span>
               <ul id="time-level">
-                <li>HTML e CSS: 2 ano</li>
-                <li>JAVASCRIPT: 2 ano</li>
+                <li>HTML e CSS: 2 anos</li>
+                <li>JAVASCRIPT: 2 anos</li>
                 <li>Git: 2 anos</li>
                 <li>Typescript: 6 meses</li>
                 <li>React: 1 meses</li>
