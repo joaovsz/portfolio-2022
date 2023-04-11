@@ -34,7 +34,7 @@ const Knowledges = () => {
                 <li>JAVASCRIPT: 2 anos</li>
                 <li>Git: 2 anos</li>
                 <li>Typescript: 6 meses</li>
-                <li>React: 1 meses</li>
+                <li>React: 1 ano</li>
                 <li>Redux: 3 meses</li>
                 <li>Node (Api's): 6 meses</li>
                 <li>Photoshop e CorelDraw: 2 anos</li>
