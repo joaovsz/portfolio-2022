@@ -17,6 +17,12 @@ export const cards = [
       "O callRegister é uma ferramenta de trabalho para auxiliar no controle diário de ligações recebidas pelos agentes de atendimento da equipe de Retenção do serviço de Oi Tv prestado pela empresa especializada em atendimento Tahto - Site Goiânia.",
     img: "/images/cardImages/callRegister.png",
     link:"https://callregister.netlify.app/"
+  }, {
+    title: "NEXTJS Quiz",
+    description:
+      "Aplicação desenvolvida com NextJs e Typescript com intuito de prover uma experiência simples de Quiz de perguntas e respostas no estilo 'Show do Milhão'.",
+    img: "/images/cardImages/quiz.jpg",
+    link:"https://quiz-next-lac.vercel.app/"
   },
   {
     title: "Simulador de Renda",
